@@ -5,18 +5,19 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale-1.0">
         <link rel="stylesheet" type="text/css" href="../project/main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
         <title>main</title>
     </head>
 
     <body>
         <header>
-            <figure>
-                <a href=""><img src="../project/img/logo.png" alt="logo"></a>
+            <figure class="logo">
+                <a href="../project/index.html"><img src="../project/img/logo.png" alt="logo"></a>
             </figure>
 
             <nav>
                 <ul>
-                    <li><a href="">About Me</a></li>
+                    <li><a href="" class="active">About Me</a></li>
                     <li><a href="">Projects</a></li>
                     <li><a href="">Blog</a></li>
                     <li><a href="">Contact</a></li>
@@ -28,12 +29,12 @@
 
             <section class="hero_sec">
                 <div class="hero">
-                    <h2>Hello.</h2>
-                    <h2 id="name">I'm Thinal</h2>
+                    <h2>Hello <span id="dot">.</span></h2>
+                    <h2 id="name"><span id="line">_____ </span>I'm Thinal Dilmith</h2>
                     <h1>Software Developer</h1>
 
-                    <a href="" id="about_btn">About me</a>
-                    <a href="" id="contact_btn">Contact now</a>
+                    <a href="" class="btn">About me</a>
+                    <a href="" class="btn" id="contact_btn">Contact now</a>
                 </div>
 
                 <div>
@@ -42,17 +43,19 @@
                     </figure>
                 </div>
 
-                <div>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JAVA SCRIPT</li>
-                        <li>PYTHON</li>
-                        <li>JAVA</li>
-                        <li>GIT</li>
-                    </ul>
-                </div>
+                
             </section>
+
+            <div class="skill_list">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVA SCRIPT</li>
+                    <li>PYTHON</li>
+                    <li>JAVA</li>
+                    <li>GIT</li>
+                </ul>
+            </div>
 
             <section>
 
