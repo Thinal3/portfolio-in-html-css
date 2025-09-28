@@ -7,9 +7,9 @@
 
 /* Body background */
 body {
-    background-color: #0b111d;
+    background-color: #041120;
     color: #F8FAFC;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* nav bar*/
@@ -21,7 +21,7 @@ header{
     
 }
 nav{
-    padding: 20px 40px 30px;
+    padding: 20px 40px 0;
 }
 
 nav ul{
@@ -29,6 +29,7 @@ nav ul{
 }
 
 nav ul li{
+    font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
     margin-left: 35px;
 }
@@ -45,9 +46,116 @@ nav ul a:hover{
     transform: scale(1.1);
 }
 
+.active{
+    color: #F8FAFC;
+}
+
 .logo img{
     height: 70px;
-    margin: 50px;
+    margin-right: 50px;
     margin-left: 90px;
     margin-top: 20px;
+    margin-bottom: 0;
+}
+
+
+/* hero section*/
+.hero_sec{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:50px;
+    
+}
+
+.hero{
+    margin-bottom: 60px;
+}
+
+.hero h2{
+    padding-left: 95px;
+    padding-bottom: 10px;
+    font-size: 45px;
+}
+
+#dot{
+    color: rgb(255, 87, 20);
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#name{
+    color: rgb(225, 226, 229);
+    font-size: 35px;
+    font-weight: lighter;
+    padding-left:0 ;
+}
+
+#line{
+    color:rgb(255, 85, 18) ;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero h1{
+    padding-left: 95px;
+    padding-bottom: 80px;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+#about_btn{
+    margin-left:95px;
+    padding: 12px 30px;
+    color: white;
+    background-color: rgb(255, 85, 18);
+    border:rgb(255, 85, 18) ;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn{
+    margin-left:95px;
+    padding: 12px 35px;
+    color: white;
+    background-color: rgb(255, 85, 18);
+    border:2px solid rgb(255, 85, 18) ;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contact_btn{
+    background-color:transparent;
+    margin-left: 30px;
+    border: 2px solid rgb(255, 85, 18);
+    padding: 12px 30px;
+}
+
+.btn:hover{
+    background-color: transparent;
+    
+}
+
+#contact_btn:hover{
+    background-color:rgb(255, 85, 18) ;
+}
+
+.skill_list{
+    display: flex;
+    background-color: #1d1e2f;
+    padding: 30px 40px;
+    align-items:  center;
+    justify-content: center;
+    
+}
+.skill_list li{
+    display: inline-block;
+    padding-left: 110px;
+    font-weight: bold;
+    color: #94A3B8;
+    
 }
