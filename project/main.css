@@ -3,7 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 /* Body background */
 body {
@@ -24,17 +30,19 @@ nav{
     padding: 20px 40px 0;
 }
 
-nav ul{
+nav > ul{  /* child combinator used above: nav > ul */
     list-style: none;
 }
 
-nav ul li{
+
+/* Apply margin to all nav items except the first one (negation pseudo-Class — :not())*/
+nav > ul > li {
     font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
     margin-left: 35px;
 }
 
-nav ul a{
+nav ul a{ /* descendant selector */
     color: #94A3B8;
     text-decoration: none;
     font-weight: bold;
@@ -124,7 +132,7 @@ nav ul a:hover{
     border:2px solid rgb(255, 85, 18) ;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 2px;
+    border-radius: 2px;   
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -159,3 +167,281 @@ nav ul a:hover{
     color: #94A3B8;
     
 }
+
+
+/* profile */
+
+.profile{
+    display: grid;
+    grid-template-columns: 1fr 300px; /* main content 1fr, aside 300px */
+    gap: 2rem;
+}
+
+
+.content {
+  flex: 1; /* main content expands */
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    /*background: linear-gradient(to left, rgba(255,255,255,0.05), rgba(245, 74, 0, 0.516));*/
+    background: linear-gradient(
+    rgba(247, 83, 7, 0.475) 0%, 
+    rgba(255, 88, 11, 0.2) 50%, 
+    rgba(255,255,255,0.05) 100%);
+    margin:60px 90px 30px;
+    transition: transform 0.4 ease-in, box-shadow 0.4 ease-in;
+    
+}
+
+.about:hover{
+    transform: translateY(-5px);
+    box-shadow:0 8px 20px #f65301c4;
+}
+.about h3{
+    padding-top: 20px ;
+    font-size: 30px;
+}
+
+.about p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 80px ;
+    text-align: center;
+}
+
+/*projects*/
+
+.project{
+    margin: 100px auto 50px;
+    padding-left: 90px;
+}
+
+.project h2{
+    padding-left:415px ;
+    font-size: 30px;
+    padding-bottom: 40px;
+
+}
+
+.project-row{
+    margin:20px auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    height: auto;
+    grid-gap: 2rem;
+
+}
+.project-card {
+  background: #061b33;
+  width: 400px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Image section */
+.project-image-container {
+  position: relative;
+}
+
+.project-image {
+  width: 400px;
+  height: 270px;
+  display: block;
+  border-radius: 10px 10px 0 0;
+}
+
+.project-title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+}
+
+/* Content grid */
+.project-details {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 1rem;
+}
+
+.project-section h3 {
+  margin-bottom: 0.3rem;
+  color: #ff5500;
+}
+
+.project-section p {
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+
+/* aside */
+
+aside {
+    position: sticky;
+    top: 0; /* sticks when it reaches the top of the viewport */
+    align-self: start;
+    height: 100vh; /* optional: full height once stuck */
+    background: rgba(255,255,255,0.05);
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    width: 300px;
+
+}
+
+
+
+.social-link{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+#small-profile{
+    width: 100px;         /* small and neat */
+    height: 100px;
+    border-radius: 50%;   /* makes it a circle */
+    object-fit: cover;    /* keeps face centered */
+    border: 3px solid #ff5500;
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+aside .social-list {
+
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+aside .social-list li {
+    margin-bottom: 0.5rem;
+    
+    
+}
+
+aside  .social-list li  a{
+
+    color: #F8FAFC;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+/*footer*/
+footer{
+    background: linear-gradient(
+    rgba(255,255,255,0.05) 0%, 
+    rgba(255, 88, 11, 0.2) 50%, 
+    rgba(247, 83, 7, 0.475) 100%);
+    border-radius: 10px;
+    color: white;
+}
+
+.footer_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* footer sec01 */
+.footer_logo{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 15px;
+}
+.footer_logo img{
+    width: 160px;
+    height: 80px;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+.footer_text {
+    padding-left: 80px;
+    padding-top: 8px;
+}
+
+.social img{
+    width: 25px;
+    height: 25px;
+    padding: 7px 6px 2px;
+    transition: all 0.5s ease-in-out;
+}
+.social img:hover{
+    transform: scale(1.2);
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+/* footer sec02 */
+.contents{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 90px;
+    padding-top: 15px;
+}
+.contents h3{
+    padding-bottom: 8px;
+}
+/*ul part in footer*/
+.ul_footer li{
+    padding-bottom: 6px;
+    list-style: none;
+}
+.ul_footer a{
+    text-decoration: none;
+    color: #94A3B8;
+    font-weight: bold;
+}
+.ul_footer a:hover{
+    color: white;
+
+}
+
+/* credit section*/
+.credit{
+    color: white;
+    background-color: #ff5500ba;
+    padding: 10px;
+    text-align: center;
+}
+.credit a{
+    font-weight: bold;
+    color: white;
+}
+.credit a:hover{
+    color: #A04000;
+}
+
+
