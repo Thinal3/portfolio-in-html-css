@@ -1,0 +1,133 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale-1.0">
+        <link rel="stylesheet" type="text/css" href="../project/main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <title>Blog</title>
+    </head>
+
+    <body>
+        <header>
+            <figure class="logo">
+                <a href="../project/index.html"><img src="../project/img/logo.png" alt="logo"></a>
+            </figure>
+
+            <nav>
+                <div class="hamburger" id="hamburger">
+                    ☰
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="../project/index.html" >About Me</a></li>
+                    <li><a href="../project/index.html#projects">Projects</a></li>
+                    <li><a href="../project/Blog.html" class="active">Blog</a></li>
+                    <li><a href="../project/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <section class="blog-section">
+
+                <h2> Blog Posts.</h2>
+                
+                <div class="blog-container">
+
+                    <article class="blog">
+
+                        <h3> Mastering Responsive Web Design </h3>
+                        <time datetime="2025-09-17">2025-09-17</time>
+
+                        <p> In my journey as a web developer, I discovered that responsive design is more than just a trend—it's a necessity. Users access websites from a variety of devices, including smartphones, tablets, laptops, and desktops.
+                             Without a responsive approach, a website can appear broken or cluttered on certain screens, leaving users frustrated and likely to leave.
+                        </p>
+                        <p> To tackle this, I learned to create layouts that adapt seamlessly to different screen sizes. Techniques like Flexbox and CSS Grid allow me to structure content in a flexible way,
+                            so elements can reposition or resize dynamically based on the screen width. Media queries further enhance this adaptability by letting me apply different styles depending on the device characteristics.
+                        </p>
+                        <p> One of the key lessons I learned is the importance of testing across multiple devices. It’s not enough to rely on resizing the browser window—real devices often reveal issues with touch interactions,
+                            font sizes, and spacing. Tools like Chrome DevTools make testing easier by simulating various screen sizes and resolutions, allowing me to fine-tune my designs before launch.
+                        </p>
+                        <p> Beyond technical techniques, responsive design also improves accessibility. Users with visual impairments or those navigating with keyboards or screen readers benefit from layouts that adapt naturally.
+                            By combining flexible grids, fluid images, and thoughtful typography, a website can deliver a consistent and enjoyable experience to everyone, regardless of the device they use.
+                        </p> 
+                        <p> Mastering responsive web design has transformed the way I build websites. Not only does it improve the overall user experience, but it also reflects professionalism and attention to detail. Whether a user
+                             visits from a small smartphone or a large desktop monitor, the website remains functional, aesthetically pleasing, and easy to navigate—achieving the ultimate goal of modern web development. Investing the time
+                              to learn and implement responsive techniques is one of the most rewarding steps for any aspiring web developer. 
+                        </p>
+                    </article>
+
+                </div>
+
+                <div class="blog-container">
+
+                    <article class="blog">
+
+                        <h3> The Power of JavaScript in Modern Web Development. </h3>
+                        <time datetime="2025-10-17">2025-10-17</time>
+
+                        <p> When I first started coding, JavaScript felt like a mystery. But as I began exploring it, I quickly realized that JavaScript is the heartbeat of modern web development. It transforms static HTML and CSS pages into interactive,
+                             dynamic, and engaging user experiences that bring websites to life. 
+                        </p>
+                        <p> From handling animations and user interactions to updating content without reloading the page, JavaScript does it all. Libraries and frameworks like React, Vue, and Angular make it easier to manage complex interfaces and build scalable applications.
+                             Even small features—like toggling dark mode, displaying live clocks, or validating forms—can significantly improve how users interact with a website. 
+                        </p> 
+                        <p> One of the most exciting parts of learning JavaScript is seeing how it integrates with APIs and backend services. Fetching live data, displaying weather updates, or connecting to AI-powered systems becomes straightforward once you understand asynchronous programming and the concept of promises.
+                             This ability to connect the frontend with real-time data makes JavaScript a must-have skill for any modern web developer. 
+                        </p> 
+                        <p> As I continue mastering JavaScript, I realize that it’s not just a programming language—it’s a creative tool. It allows developers to design seamless digital experiences that blend design, logic, and interaction.
+                             Understanding its power has completely changed how I approach web projects and has opened countless opportunities for innovation and creativity. 
+                        </p>
+
+                    </article>
+
+                </div>
+            </section>
+        
+        </main>
+
+        <footer>
+            <div class="footer_section">
+                <div class="footer_logo">
+                    <h3>Welcome to My Portfolio</h3>
+                    <a href=><img src=" " alt="Logo"></a>
+                    <div class="footer_text">
+                        <p>Driven by curiosity and creativity, I’m always looking for new challenges and opportunities to turn ideas into reality.<br>
+                            Let’s connect and bring your next project to life.</p>
+                    </div>
+                    <div class="social">
+                        <a href="" target="_blank"><img src=""></a>
+                        <a href="" target="_blank"><img src=""></a>
+                        <a href="" target="_blank"><img src=""></a>
+                    </div>
+                </div>
+                
+
+                <div class="contents">
+                    <h3>Nav</h3>
+                    <ul class="ul_footer">
+                        <li><a href="../project/index.html">About Me</a></li>
+                        <li><a href="../project/index.html#projects">My Projects</a></li>
+                        <li><a href="../project/Blog.html">Blog</a></li>
+                        <li><a href="../project/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="credit">
+                <p>Copyright© 2025 Thish. designed by <a href="">@Thinal Dilmith</a></p>
+            </div>
+        </footer>
+
+         <script>
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+
+            hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            });
+        </script>
+
+    </body>
+</html>
