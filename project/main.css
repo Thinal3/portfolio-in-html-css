@@ -20,6 +20,7 @@ body {
 
 /* nav bar*/
 header{
+/* Flexbox used here (display: flex) */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,9 +54,11 @@ nav ul a{ /* descendant selector */
     color: #94A3B8;
     text-decoration: none;
     font-weight: bold;
+/* Transition used here and "property duration timing-function" */
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
+/* Pseudo-class :hover used here to style interaction states */
 nav ul a:hover{
     color: #F8FAFC;
     transform: scale(1.1);
@@ -104,9 +107,11 @@ nav ul a:hover{
     font-size: 35px;
     font-weight: lighter;
     padding-left:0 ;
+/* Animation used here and "animation-name duration timing-function" */
     animation: animation1 3s ease 0s;
 }
 
+/* Animation keyframes defined here */
 @keyframes animation1{
     from{
         transform: translateX(-130px);
@@ -190,6 +195,7 @@ nav ul a:hover{
 /* profile */
 
 .profile{
+/* Grid used here (display: grid) */
     display: grid;
     grid-template-columns: 1fr 300px; /* main content 1fr, aside 300px */
     gap: 2rem;
@@ -220,12 +226,14 @@ nav ul a:hover{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+/* Gradient used here and "linear-gradient(direction, color1, color2)" */
     /*background: linear-gradient(to left, rgba(255,255,255,0.05), rgba(245, 74, 0, 0.516));*/
     background: linear-gradient(
     rgba(247, 83, 7, 0.475) 0%, 
     rgba(255, 88, 11, 0.2) 50%, 
     rgba(255,255,255,0.05) 100%);
     margin:60px 90px 30px;
+/* Shadows used here and "offset-x offset-y blur-radius color" */
     transition: transform 1s ease, box-shadow 1s ease;
     
 }
@@ -526,6 +534,8 @@ footer{
     padding-left: 40px;
 }
 
+
+
 .contact-form label{
     color: #F8FAFC;
     font-size: 15px;
@@ -551,6 +561,7 @@ footer{
 
 /* Attribute selector for placeholder */
 
+/* Attribute selector used here (e.g., [placeholder]) */
 textarea[placeholder] {
     font-style: italic;
     color: #aaa;
@@ -565,6 +576,7 @@ input[placeholder]{
 }
 
 /* Focus state */
+/* Pseudo-class :focus used here to style focus states */
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
@@ -573,6 +585,7 @@ input[placeholder]{
 }
 
 /*validation state*/
+/* Pseudo-class :valid used here for validation state styling */
 .contact-form textarea:valid,
 .contact-form input:valid{
     border-color: #00ff88;
@@ -645,6 +658,7 @@ input[placeholder]{
 
 
 /*rwd for nav bar after max width 1000px*/
+/* Media query used here for responsive design */
 @media (max-width:1000px){
     nav {
         position: relative;
