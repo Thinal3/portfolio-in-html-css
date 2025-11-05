@@ -96,6 +96,13 @@ nav ul a:hover{
     font-size: 45px;
 }
 
+/*Pseudo-element with generated content*/
+#name::after {
+  content: "💡"; 
+  color: #ff5500;
+  margin-left: 5px;
+}
+
 #dot{
     color: rgb(255, 87, 20);
     font-size: 60px;
@@ -303,6 +310,11 @@ nav ul a:hover{
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* negation pseudo-class (:not())*/
+.project-card:not(:hover) {
+  opacity: 0.8;
 }
 
 /* Image section */
@@ -654,6 +666,11 @@ input[placeholder]{
     padding: 20px 50px;
     text-align: justify;
     color: #F8FAFC;
+}
+
+/*Structural selectors  :first-child */
+.blog h3:first-child {
+  text-transform: capitalize;
 }
 
 
